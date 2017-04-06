@@ -1,0 +1,24 @@
+public class TestBirthday {
+
+    
+    public static void main(String[] args) {
+        Birthday obj1=new Birthday();
+        obj1.show();
+        Birthday obj2=new Birthday(1990,11,12);
+        obj2.show();
+    }
+}
+class Birthday {
+    int year,month,day;
+    Birthday(){
+        
+    }
+    Birthday(int year,int month,int day){
+        this.year=year;
+        this.month=month;
+        this.day=day;
+    }
+    void show(){
+        System.out.println("出生年月："+year+"年"+month+"月"+day+"日");
+    }
+}
